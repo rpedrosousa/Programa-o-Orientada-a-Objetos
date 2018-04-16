@@ -14,6 +14,10 @@ class empregado{
 	public:
 		char nome[40];
 		int idade;
+	void setidade (int i) {idade=i;}
+	int getidade() {return idade;}
+	int ano (int ano_actual)
+	{return ano_actual - idade;}
 	void setcodigo(char *c){
 		codigo=c;
 	}
@@ -27,7 +31,7 @@ class empregado{
 		return salario;
 	}
 	void mostradados();//prototipo
-}e1;
+}e1,p1;
 
 
 main (){
@@ -41,6 +45,7 @@ main (){
 	cout<<"Idade: "<<p1.getidade()<<"\n";
 	cout<<"ano de nascimento: ";
 	cout<<p1.ano(2018);
+	e1.mostradados();
 }
 
 void empregado :: mostradados(){
